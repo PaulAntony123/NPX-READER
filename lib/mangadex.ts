@@ -8,6 +8,7 @@ export interface MangaDexManga {
     status: string;
     contentRating: string;
     lastChapter: string;
+    year?: number;
   };
   relationships: any[];
 }
