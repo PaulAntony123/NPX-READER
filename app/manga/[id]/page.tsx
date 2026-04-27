@@ -73,7 +73,7 @@ export default async function MangaDetails({ params }: { params: Promise<{ id: s
                   <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" /> {manga.attributes.contentRating}
                 </span>
                 <span className="bg-white/5 text-gray-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-white/5 flex items-center gap-2">
-                  <Calendar className="w-3 h-3" /> {(manga.attributes as any).year || 'N/A'}
+                  <Calendar className="w-3 h-3" /> {(manga as any).attributes?.year || 'N/A'}
                 </span>
               </div>
               
